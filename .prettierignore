@@ -1,0 +1,35 @@
+# Ignore Node.js modules
+node_modules
+
+# Ignore build and distribution directories
+build/
+dist/
+
+# Ignore log files
+*.log
+
+# Ignore generated files
+*.min.js
+*.min.css
+*.map
+
+# Ignore configuration files
+.env
+.env.local
+.env.development
+.env.test
+.env.production
+
+# Ignore dependency lock files
+package-lock.json
+yarn.lock
+
+# Ignore production build files
+*.prod.*
+
+# Ignore coverage reports
+coverage/
+
+# Ignore database files
+*.db
+*.sqlite
