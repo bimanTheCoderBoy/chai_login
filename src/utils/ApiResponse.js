@@ -1,7 +1,8 @@
 export class ApiResponse{
-    constructor(data,success=true,status){
+    constructor(data,message,success=true){
         this.data=data;
+        this.message=message;
         this.success=success;
-        this.status=status? status :'done';
+        
     }
 }

@@ -1,6 +1,6 @@
 import{Schema,model} from "mongoose";
 import bcrypt from "bcrypt"
-import jwt from "json-web-token"
+import jwt from "jsonwebtoken"
 const userSchema=new Schema(
     {
         username:{
@@ -31,7 +31,8 @@ const userSchema=new Schema(
             }]
         },
         avtar:{
-            type:String
+            type:String,
+            required:true,
         },
         coverImage:{
             type:String

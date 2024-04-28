@@ -13,7 +13,7 @@ const uploadFileToCloudinary=async(localFilePath)=>{
         const response=await cloudinary.uploader.upload(localFilePath,{
             resource_type:"auto"
         });
-        return response.url;
+        return response;
         //remove the temporary file after it
     
 
@@ -22,4 +22,4 @@ const uploadFileToCloudinary=async(localFilePath)=>{
         return null
     }
 }
-export default uploadFileToCloudinary;
+export { uploadFileToCloudinary};
