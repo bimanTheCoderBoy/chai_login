@@ -18,7 +18,7 @@ const authMiddleware=asyncHandler(async(req,_,next)=>{
     const tokenData=jwt.verify(token,process.env.ACCESS_TOKEN_SECRET)
 
     //checking and getting user
-    const user=await User.findById(tokenData._id)
+    const user=await User.findById(tokenData?._id)
     if(!user)
     {
         throw new ApiError(400,"Invalid credentials")
